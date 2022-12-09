@@ -1,0 +1,86 @@
+Q1. How do you load a CSV file into a Pandas DataFrame?
+A.  using pandas inbuilt function "read_csv()".
+
+Q2. How do you check the data type of a column in a Pandas DataFrame?
+A.  Use Dataframe.dtypes to get Data types of columns in Dataframe.
+
+Q3. How do you select rows from a Pandas DataFrame based on a condition?
+A.  # selecting rows based on condition
+    rslt_df = dataframe[dataframe['Percentage'] > 80]
+  
+Q4. How do you rename columns in a Pandas DataFrame?
+A.  One way of renaming the columns in a Pandas Dataframe is by using the rename() function. 
+
+Q5. How do you drop columns in a Pandas DataFrame?
+A.  pandas.DataFrame.drop() method is used to remove the columns from the DataFrame
+
+Q6. How do you find the unique values in a column of a Pandas DataFrame?
+A.  You can get unique values in column (multiple columns) from pandas DataFrame using unique().
+
+Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
+A.  df['column name'].isna().sum()
+
+Q8. How do you fill missing values in a Pandas DataFrame with a specific value?
+A.  The fillna() function iterates through your dataset and fills all empty rows with a specified value.
+
+Q9. How do you concatenate two Pandas DataFrames?
+A.  The concat() function in pandas is used to append either columns or rows from one DataFrame to another.
+
+Q10. How do you merge two Pandas DataFrames on a specific column?
+A.   We can merge two Pandas DataFrames on certain columns using the merge function by simply specifying the certain columns for merge. 
+     Syntax: 
+	DataFrame.merge(right, how=’inner’, on=None, left_on=None, 
+			    right_on=None, left_index=False, right_index=False, 
+			    sort=False, copy=True, indicator=False, validate=None)
+
+Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
+A.   data.groupby('month', as_index=False).agg({"duration": "sum"})
+
+Q12. How do you pivot a Pandas DataFrame?
+A.   The pivot() function is used to reshaped a given DataFrame organized by given index / column values.
+
+Q13. How do you change the data type of a column in a Pandas DataFrame?
+A.   Change column type in pandas using convert_dtypes()
+
+Q14. How do you sort a Pandas DataFrame by a specific column?
+A.   To sort the DataFrame based on the values in a single column, you'll use ".sort_values()" 
+     By default, this will return a new DataFrame sorted in ascending order.
+
+Q15. How do you create a copy of a Pandas DataFrame?
+A.   The copy() method returns a copy of the DataFrame. 
+
+Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
+A.   Using Loc to Filter With Multiple Conditions
+
+Q17. How do you calculate the mean of a column in a Pandas DataFrame?
+A.   To get column average or mean from pandas DataFrame use either mean() and describe() method. 
+
+Q18. How do you calculate the standard deviation of a column in a Pandas DataFrame?
+A.   Standard deviation is calculated using the function ".std()".
+
+Q19. How do you calculate the correlation between two columns in a Pandas DataFrame?
+A.   By using corr() function we can get the correlation between two columns in the dataframe.
+
+Q20. How do you select specific columns in a DataFrame using their labels?
+A.   This is the most basic way to select a single column from a dataframe, just put the string name of the column in brackets.
+     you can use square brackets or other advanced methods such as loc and iloc .
+
+Q21. How do you select specific rows in a DataFrame using their indexes?
+A.   #Selecting a row using index
+	df.loc[100]
+
+Q22. How do you sort a DataFrame by a specific column?
+A.   To sort the DataFrame based on the values in a single column, you'll use ".sort_values()" .
+
+Q23. How do you create a new column in a DataFrame based on the values of another column?
+A.   Using apply() method
+
+Q24. How do you remove duplicates from a DataFrame?
+A.   Using Pandas DataFrame drop_duplicates() Method
+
+Q25. What is the difference between .loc and .iloc in Pandas?
+A.   The main distinction between the two methods is: 
+     	loc gets rows (and/or columns) with particular labels. 
+     	iloc gets rows (and/or columns) at integer locations.
+
+
